@@ -78,6 +78,24 @@ MonoBehaviour:
     splitMethod: 0
     version: 1
     colliderType: 0
+  - texture: {fileID: 2800000, guid: fd7b083cbacc624469071f80d40ac4e8, type: 3}
+    tilesX: 0
+    tilesY: 0
+    numTiles: 0
+    anchor: 4
+    pad: 1
+    scale: {x: 1, y: 1, z: 1}
+    additive: 0
+    active: 1
+    tileWidth: 7
+    tileHeight: 8
+    tileMarginX: 0
+    tileMarginY: 0
+    tileSpacingX: 0
+    tileSpacingY: 0
+    splitMethod: 0
+    version: 1
+    colliderType: 0
   fonts: []
   defaults:
     additive: 0
@@ -96,10 +114,10 @@ MonoBehaviour:
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
   textureCompression: 0
-  atlasWidth: 16
+  atlasWidth: 32
   atlasHeight: 32
   forceSquareAtlas: 0
-  atlasWastage: 40.8203125
+  atlasWastage: 34.6679688
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -325,7 +343,7 @@ MonoBehaviour:
     diceUnitX: 64
     diceUnitY: 64
     diceFilter: 0
-    pad: 0
+    pad: 1
     extraPadding: 0
     source: 0
     fromSpriteSheet: 0
@@ -339,6 +357,129 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
+    colliderType: 0
+    colliderData: []
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
+  - name: Powerup/0
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: fd7b083cbacc624469071f80d40ac4e8, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    diceFilter: 0
+    pad: 1
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 1
+    spriteSheetId: 2
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 1
+    regionX: 0
+    regionY: 0
+    regionW: 7
+    regionH: 8
+    regionId: 0
+    colliderType: 0
+    colliderData: []
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
+  - name: Powerup/1
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: fd7b083cbacc624469071f80d40ac4e8, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    diceFilter: 0
+    pad: 1
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 1
+    spriteSheetId: 2
+    spriteSheetX: 1
+    spriteSheetY: 0
+    extractRegion: 1
+    regionX: 7
+    regionY: 0
+    regionW: 7
+    regionH: 8
+    regionId: 1
+    colliderType: 0
+    colliderData: []
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
+  - name: Powerup/2
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: fd7b083cbacc624469071f80d40ac4e8, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    diceFilter: 0
+    pad: 1
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 1
+    spriteSheetId: 2
+    spriteSheetX: 2
+    spriteSheetY: 0
+    extractRegion: 1
+    regionX: 14
+    regionY: 0
+    regionW: 7
+    regionH: 8
+    regionId: 2
     colliderType: 0
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
@@ -376,12 +517,12 @@ MonoBehaviour:
   userDefinedTextureSettings: 0
   mipmapEnabled: 0
   anisoLevel: 1
-  physicsEngine: 0
+  physicsEngine: 1
   physicsDepth: .100000001
   disableTrimming: 0
   disableRotation: 0
   normalGenerationMode: 0
-  padAmount: -1
+  padAmount: 1
   autoUpdate: 1
   editorDisplayScale: 6.85000038
   version: 4

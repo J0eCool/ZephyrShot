@@ -706,6 +706,9 @@ MonoBehaviour:
     - Shot/1
     - Shot/2
     - Enemy
+    - Powerup/0
+    - Powerup/1
+    - Powerup/2
     spriteTextureGUIDs:
     - eaf2117533275ba478c93c17d0021a1a
     - eaf2117533275ba478c93c17d0021a1a
@@ -713,6 +716,9 @@ MonoBehaviour:
     - 5c880fa7e8692e142b47213288f02018
     - 5c880fa7e8692e142b47213288f02018
     - 5decfc76bac278d4fbbb96ec8408fbba
+    - fd7b083cbacc624469071f80d40ac4e8
+    - fd7b083cbacc624469071f80d40ac4e8
+    - fd7b083cbacc624469071f80d40ac4e8
     spriteTextureTimeStamps:
     - 1410104940.94012
     - 1410104940.94012
@@ -720,6 +726,9 @@ MonoBehaviour:
     - 1410113376.20259
     - 1410113376.20259
     - 1410391649.03872
+    - 1410711793.04447
+    - 1410711793.04447
+    - 1410711793.04447
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
