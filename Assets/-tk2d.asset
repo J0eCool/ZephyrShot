@@ -709,6 +709,7 @@ MonoBehaviour:
     - Powerup/0
     - Powerup/1
     - Powerup/2
+    - UI
     spriteTextureGUIDs:
     - eaf2117533275ba478c93c17d0021a1a
     - eaf2117533275ba478c93c17d0021a1a
@@ -719,6 +720,7 @@ MonoBehaviour:
     - fd7b083cbacc624469071f80d40ac4e8
     - fd7b083cbacc624469071f80d40ac4e8
     - fd7b083cbacc624469071f80d40ac4e8
+    - 2a6df14078ddd104ca25ffdb3985c4ba
     spriteTextureTimeStamps:
     - 1410104940.94012
     - 1410104940.94012
@@ -726,9 +728,10 @@ MonoBehaviour:
     - 1410113376.20259
     - 1410113376.20259
     - 1410391649.03872
-    - 1410711793.04447
-    - 1410711793.04447
-    - 1410711793.04447
+    - 1410711873.53707
+    - 1410711873.53707
+    - 1410711873.53707
+    - 1410712066.15409
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

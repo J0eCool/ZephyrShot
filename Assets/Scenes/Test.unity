@@ -497,7 +497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
       propertyPath: m_Mesh

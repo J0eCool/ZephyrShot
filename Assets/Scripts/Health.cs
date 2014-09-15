@@ -27,4 +27,8 @@ public class Health : MonoBehaviour {
 			}
         }
     }
+
+	public float GetHealthFraction() {
+		return (float)health / maxHealth;
+	}
 }
