@@ -8,4 +8,6 @@ public class BaseManagerComponent<T> : MonoBehaviour where T : MonoBehaviour{
 	void Start() {
 		instance = this as T;
 	}
+
+    protected virtual void Init() {}
 }
