@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Powerup : MonoBehaviour {
-	public float amount = 0.1f;
 	public Vector3 velocity;
 
 	void Update() {
@@ -13,7 +12,7 @@ public class Powerup : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		PlayerFire player = other.GetComponent<PlayerFire>();
 		if (player != null) {
-			player.fireRate += amount;
+			player.CollectPowerup(this);
 			GameObject.Destroy(gameObject);
 		}
 	}

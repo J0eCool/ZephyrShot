@@ -19,9 +19,7 @@ public class Health : MonoBehaviour {
             GameObject.Destroy(b.gameObject);
 
 			if (health <= 0) {
-				if (spawnOnDeath != null) {
-					GameObject.Instantiate(spawnOnDeath, transform.position, Quaternion.identity);
-				}
+				PowerupManager.instance.TrySpawnRandomPowerup(transform.position);
 
 				GameObject.Destroy(gameObject);
 			}

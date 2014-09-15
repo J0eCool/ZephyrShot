@@ -24,13 +24,13 @@ public class AdjustGunButton : BaseUiComponent {
 
 		switch (type) {
 		case UpgradeType.BulletSpeed:
-			fire.bulletSpeed += amount;
+			fire.bulletSpeedBase += amount;
 			break;
 		case UpgradeType.FireRate:
-			fire.fireRate += amount;
+			fire.fireRateBase += amount;
 			break;
 		case UpgradeType.ShotNumber:
-			fire.numBullets += (int)amount;
+			fire.numBulletsBase += (int)amount;
 			break;
 		}
 	}
