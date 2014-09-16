@@ -99,11 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156081fdf61a48946a26ec88d2aa4ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 100000, guid: 0995a7b401ebb724ba3417f1a8fcd44f, type: 2}
-  fireRate: 2.5
-  bulletSpeed: 7.5
-  numBullets: 1
-  spreadPerBullet: 5
+  speedPerLevel: 7
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
