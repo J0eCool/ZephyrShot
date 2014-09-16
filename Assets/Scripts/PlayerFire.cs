@@ -8,6 +8,7 @@ public class PlayerFire : MonoBehaviour {
 	private GunData gun { get { return DataManager.instance.gunTypes[gunIndex]; } }
 
 	private int powerupLevel = 0;
+	private int bulletLevel = 0;
 
 	private int gunIndex = 0;
 
@@ -23,7 +24,7 @@ public class PlayerFire : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Tab)) {
 			gunIndex = (gunIndex + 1) % DataManager.instance.gunTypes.Length;
 		}
-		
+
 		float fireRate = FireRate();
 		float timePerShot = 1.0f / fireRate;
 		if (shotTimer.HasPassed(timePerShot)) {
@@ -48,13 +49,19 @@ public class PlayerFire : MonoBehaviour {
 		int numBullets = NumBullets();
 		float bulletSpeed = BulletSpeed();
 
-		float totalAngle = (numBullets * gun.spreadPerBullet + gun.spreadBase) * Mathf.Deg2Rad;
 		float w = (numBullets - 1) / 2.0f;
 		for (int i = 0; i < numBullets; i++) {
-			float angle = (float)(i - w) / numBullets * totalAngle;
-			Vector3 vel = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0.0f) * bulletSpeed;
+			Vector3 offset = (i - w) * gun.offsetPerBullet + gun.offset;
+			if (i % 2 == 0) {
+				offset.x *= -1.0f;
+			}
+			BoxCollider2D box = GetComponent<BoxCollider2D>();
+			offset.Scale(box.size * 0.5f);
+			offset.Scale(transform.localScale);
 
-			GameObject obj = GameObject.Instantiate(gun.bulletPrefab, transform.position, Quaternion.identity) as GameObject;
+			Vector3 vel = Vector3.up * bulletSpeed;
+
+			GameObject obj = GameObject.Instantiate(gun.bulletPrefab, transform.position + offset, Quaternion.identity) as GameObject;
 			obj.GetComponent<Bullet>().Init(vel);
 
 			SpawnFolder.SetParent(obj, "Bullets");
@@ -80,18 +87,30 @@ public class PlayerFire : MonoBehaviour {
 	}
 
 	public float FireRate() {
-		return gun.fireRateBase * Mathf.Pow(1.0f + speedPerLevel / 100.0f, powerupLevel);
+		return gun.fireRateBase * Mathf.Pow(1.0f + speedPerLevel / 100.0f, powerupLevel + bulletLevel);
 	}
 
 	public int NumBullets() {
-		return gun.numBulletsBase;
+		return gun.numBulletsBase + bulletLevel;
 	}
 
 	public float BulletSpeed() {
+		if (gun.type == GunType.Straight) {
+			return gun.bulletSpeedBase * (1.0f + bulletLevel / 25.0f);
+		}
 		return gun.bulletSpeedBase;
+	}
+
+	public float MaxLevel() {
+		return 10 + bulletLevel;
 	}
 
 	public void CollectPowerup(Powerup powerup) {
 		powerupLevel++;
+
+		if (powerupLevel > MaxLevel()) {
+			powerupLevel = 0;
+			bulletLevel++;
+		}
 	}
 }

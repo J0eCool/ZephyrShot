@@ -16,6 +16,8 @@ public class GunData {
     public int numBulletsBase;
     public float spreadPerBullet;
     public float spreadBase;
+    public Vector3 offset;
+    public Vector3 offsetPerBullet;
 }
 
 public enum GunType {
