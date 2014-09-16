@@ -216,6 +216,15 @@ MonoBehaviour:
     spreadBase: 10
     offset: {x: 0, y: 1, z: 0}
     offsetPerBullet: {x: 0, y: 0, z: 0}
+  - bulletPrefab: {fileID: 100000, guid: 0995a7b401ebb724ba3417f1a8fcd44f, type: 2}
+    type: 2
+    fireRateBase: 3
+    bulletSpeedBase: 6
+    numBulletsBase: 1
+    spreadPerBullet: 3
+    spreadBase: 10
+    offset: {x: 1, y: .25, z: 0}
+    offsetPerBullet: {x: 0, y: 0, z: 0}
 --- !u!1 &1145836501
 GameObject:
   m_ObjectHideFlags: 0

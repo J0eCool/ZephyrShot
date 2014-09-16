@@ -14,6 +14,8 @@ public class PlayerFire : MonoBehaviour {
 
 	private Timer shotTimer;
 	private Timer timeFiring;
+	private int shotsFired = 0;
+	private int bulletsFired = 0;
 	private BoxCollider2D box;
 
 
@@ -34,6 +36,7 @@ public class PlayerFire : MonoBehaviour {
 			shotTimer.Advance(timePerShot);
 
 			Shoot();
+			shotsFired++;
 		}
 	}
 
@@ -44,6 +47,9 @@ public class PlayerFire : MonoBehaviour {
 			break;
 		case GunType.Helixing:
 			ShootHelixing();
+			break;
+		case GunType.SideShooting:
+			ShootSide();
 			break;
 		}
 	}
@@ -66,6 +72,7 @@ public class PlayerFire : MonoBehaviour {
 			obj.GetComponent<Bullet>().Init(vel);
 
 			SpawnFolder.SetParent(obj, "Bullets");
+			bulletsFired++;
 		}
 	}
 
@@ -89,6 +96,32 @@ public class PlayerFire : MonoBehaviour {
 			obj.GetComponent<Bullet>().Init(vel);
 
 			SpawnFolder.SetParent(obj, "Bullets");
+			bulletsFired++;
+		}
+	}
+
+	private void ShootSide() {
+		int numBullets = NumBullets();
+		float bulletSpeed = BulletSpeed();
+
+		float totalAngle = (numBullets * gun.spreadPerBullet + gun.spreadBase) * Mathf.Deg2Rad;
+		for (int i = 0; i < numBullets; i++) {
+			float angle = 0.0f;// Mathf.Sin(rot + timeFiring.Elapsed() * angPerTime) * totalAngle;
+
+			Vector3 offset = gun.offset;
+			if (bulletsFired % 2 == 0) {
+				offset.x *= -1.0f;
+			}
+			offset.Scale(box.size * 0.5f);
+			offset.Scale(transform.localScale);
+
+			Vector3 vel = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0.0f) * bulletSpeed;
+
+			GameObject obj = GameObject.Instantiate(gun.bulletPrefab, transform.position + offset, Quaternion.identity) as GameObject;
+			obj.GetComponent<Bullet>().Init(vel);
+
+			SpawnFolder.SetParent(obj, "Bullets");
+			bulletsFired++;
 		}
 	}
 

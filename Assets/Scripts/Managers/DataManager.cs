@@ -23,4 +23,5 @@ public class GunData {
 public enum GunType {
     Straight,
     Helixing,
+	SideShooting,
 }
