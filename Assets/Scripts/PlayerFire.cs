@@ -105,7 +105,7 @@ public class PlayerFire : MonoBehaviour {
 		float bulletSpeed = BulletSpeed();
 
 		float totalAngle = (numBullets * gun.spreadPerBullet + gun.spreadBase) * Mathf.Deg2Rad;
-		for (int i = 0; i < numBullets; i++) {
+		//for (int i = 0; i < numBullets; i++) {
 			float angle = 0.0f;// Mathf.Sin(rot + timeFiring.Elapsed() * angPerTime) * totalAngle;
 
 			Vector3 offset = gun.offset;
@@ -122,14 +122,21 @@ public class PlayerFire : MonoBehaviour {
 
 			SpawnFolder.SetParent(obj, "Bullets");
 			bulletsFired++;
-		}
+		//}
 	}
 
 	public float FireRate() {
-		return gun.fireRateBase * Mathf.Pow(1.0f + speedPerLevel / 100.0f, powerupLevel + bulletLevel);
+		float rate = gun.fireRateBase * Mathf.Pow(1.0f + speedPerLevel / 100.0f, powerupLevel + bulletLevel);
+		if (gun.type == GunType.SideShooting) {
+			rate *= bulletLevel + 1;
+		}
+		return rate;
 	}
 
 	public int NumBullets() {
+		if (gun.type == GunType.SideShooting) {
+			return 1;
+		}
 		return gun.numBulletsBase + bulletLevel;
 	}
 
