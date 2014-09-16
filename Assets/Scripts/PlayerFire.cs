@@ -14,10 +14,13 @@ public class PlayerFire : MonoBehaviour {
 
 	private Timer shotTimer;
 	private Timer timeFiring;
+	private BoxCollider2D box;
+
 
 	void Start() {
 		shotTimer = new Timer();
 		timeFiring = new Timer();
+		box = GetComponent<BoxCollider2D>();
 	}
 
 	void Update() {
@@ -51,11 +54,9 @@ public class PlayerFire : MonoBehaviour {
 
 		float w = (numBullets - 1) / 2.0f;
 		for (int i = 0; i < numBullets; i++) {
-			Vector3 offset = (i - w) * gun.offsetPerBullet + gun.offset;
-			if (i % 2 == 0) {
-				offset.x *= -1.0f;
-			}
-			BoxCollider2D box = GetComponent<BoxCollider2D>();
+			Vector3 offset = (i - w) * gun.offsetPerBullet;
+			offset.y *= Mathf.Sign(i - w);
+			offset += gun.offset;
 			offset.Scale(box.size * 0.5f);
 			offset.Scale(transform.localScale);
 
@@ -77,9 +78,14 @@ public class PlayerFire : MonoBehaviour {
 			float rot = Mathf.PI * 2.0f * i / numBullets;
 			float angPerTime = Mathf.PI;
 			float angle = Mathf.Sin(rot + timeFiring.Elapsed() * angPerTime) * totalAngle;
+
+			Vector3 offset = gun.offset;
+			offset.Scale(box.size * 0.5f);
+			offset.Scale(transform.localScale);
+
 			Vector3 vel = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0.0f) * bulletSpeed;
 
-			GameObject obj = GameObject.Instantiate(gun.bulletPrefab, transform.position, Quaternion.identity) as GameObject;
+			GameObject obj = GameObject.Instantiate(gun.bulletPrefab, transform.position + offset, Quaternion.identity) as GameObject;
 			obj.GetComponent<Bullet>().Init(vel);
 
 			SpawnFolder.SetParent(obj, "Bullets");
@@ -102,13 +108,15 @@ public class PlayerFire : MonoBehaviour {
 	}
 
 	public float MaxLevel() {
-		return 10 + bulletLevel;
+		return 3 + bulletLevel;
 	}
 
 	public void CollectPowerup(Powerup powerup) {
-		powerupLevel++;
+		if (powerupLevel < 25) {
+			powerupLevel++;
+		}
 
-		if (powerupLevel > MaxLevel()) {
+		if (powerupLevel > MaxLevel() && bulletLevel < 4) {
 			powerupLevel = 0;
 			bulletLevel++;
 		}

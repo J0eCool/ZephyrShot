@@ -17,8 +17,16 @@ public class Timer {
     }
 
     public void Advance(float dt) {
-        startTime += dt;
+        AdvanceWithoutReset(dt);
+
+		if (HasPassed(dt)) {
+			Reset();
+		}
     }
+
+	public void AdvanceWithoutReset(float dt) {
+		startTime += dt;
+	}
 
     public void Reset() {
         startTime = Time.realtimeSinceStartup;
