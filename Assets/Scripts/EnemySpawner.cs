@@ -7,13 +7,18 @@ public class EnemySpawner : MonoBehaviour {
 
 	public float spawnTime = 2.0f;
 
-	private float timer = 0.0f;
+	private Timer timer;
+
+	void Start() {
+		timer = new Timer();
+	}
 
 	void Update() {
-		timer += Time.deltaTime;
-		if (timer >= spawnTime) {
-			timer -= spawnTime;
-			GameObject.Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+		if (timer.HasPassed(spawnTime)) {
+			timer.Reset();
+			
+			GameObject obj = GameObject.Instantiate(enemyPrefab, transform.position, Quaternion.identity) as GameObject;
+			SpawnFolder.SetParent(obj, "Enemies");
 		}
 	}
 }

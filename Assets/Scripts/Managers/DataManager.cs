@@ -9,7 +9,13 @@ public class DataManager : BaseManagerComponent<DataManager> {
 
 [Serializable]
 public class GunData {
+    public enum GunType {
+        Straight,
+        Helixing,
+    }
+
     public GameObject bulletPrefab;
+    public GunType type;
     public float fireRateBase;
     public float bulletSpeedBase;
     public int numBulletsBase;
