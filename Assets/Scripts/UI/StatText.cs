@@ -12,6 +12,6 @@ public class StatText : MonoBehaviour {
 	}
 	
 	void Update() {
-		text.text = "FireRate: " + player.FireRate();
+		text.text = player.StatsText();
 	}
 }
