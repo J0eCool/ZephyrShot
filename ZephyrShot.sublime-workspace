@@ -1,0 +1,494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"BoxCo",
+				"BoxCollider2D	[class]"
+			],
+			[
+				"COll",
+				"CollectPowerup"
+			],
+			[
+				"colliderbou",
+				"collider2D.bounds	[property]"
+			],
+			[
+				"powerup",
+				"powerupLevel"
+			],
+			[
+				"numBu",
+				"numBullets"
+			],
+			[
+				"numBull",
+				"numBulletsBase"
+			],
+			[
+				"OnCollisionEnter",
+				"OnCollisionEnter	MonoBehaviour.*(?)"
+			],
+			[
+				"OnTrigg",
+				"OnTriggerEnter	MonoBehaviour.*(?)"
+			],
+			[
+				"OnTri",
+				"OnTriggerEnter	Collider.*(?)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"rever",
+				"File: Revert"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jacob/Programming/Unity/ZephyrShot"
+	],
+	"file_history":
+	[
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/Managers/PowerupManager.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Prefabs/Powerup.prefab",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/TK2DROOT/tk2dUI_demo/ControlPrefabs/Layout/Window.prefab",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/TK2DROOT/tk2d_demo/demospritecollection/sprites/attachpointdemo/attachpoint_walk.png.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/SpriteAnimations.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/TK2DROOT/tk2d/Editor/Sprites/SpritePicker.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/ProjectSettings/TimeManager.asset",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/TK2DROOT/tk2d/Editor/tk2dIndex.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Textures.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scenes.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/Managers/BaseManagerComponent.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/UI/AdjustGunButton.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/DataComponent.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Prefabs/Player.prefab",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Prefabs.meta",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/TK2DROOT/tk2d_demo/DemoAnimations.prefab",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Library/metadata/d0/d07e2813ed19c7346827e964f086f873",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/GetsShot.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/Editor/Tests/GetsShotTest.cs",
+		"/Users/jacob/Programming/Unity/ZephyrShot/Assets/Scripts/Tests/GetsShotTest.cs",
+		"/Users/jacob/Programming/HTML/PiClicker/main.js",
+		"/Users/jacob/PG_Code/tools/tool_server/update_commits.py",
+		"/Users/jacob/PG_Code/tools/tool_server/script_tools/pgscript.py",
+		"/Users/jacob/PG_Code/tools/tool_server/pgengine/update_commits.py",
+		"/Users/jacob/PG_Code/tools/tool_server/script_tools/l10n/combine_strings.py",
+		"/Users/jacob/PG_Code/tools/tool_server/cron.yaml",
+		"/Users/jacob/PG_Code/tools/tool_server/shared/gae_shared/tlslite/utils/RSAKey.py",
+		"/Users/jacob/PG_Code/tools/tool_server/gflags.py",
+		"/Users/jacob/PG_Code/tools/tool_server/main.py",
+		"/Users/jacob/PG_Code/tools/tool_server/pgengine/tests/test_cron_update.py",
+		"/Users/jacob/PG_Code/tools/tool_server/script_tools/secure_rpc_client.py",
+		"/Users/jacob/PG_Code/tools/tool_server/shared/secure_rpc.py",
+		"/Users/jacob/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jacob/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/jacob/PG_Code/tools/tool_server/shared/__init__.py",
+		"/Users/jacob/.ssh/known_hosts",
+		"/Users/jacob/cherry_script.sh",
+		"/Users/jacob/.ssh/config",
+		"/etc/ssh_config",
+		"/Users/jacob/.ssh/id_rsa_PERSONAL",
+		"/Users/jacob/Programming/C/digraphs.c",
+		"/Users/jacob/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jacob/Programming/Haskell/calcPi.hs",
+		"/Users/jacob/.bash_history",
+		"/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Classes/EventLogger.m",
+		"/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Classes/EventLogger.h",
+		"/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/xctestify.sh",
+		"/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/PGEngineTests/xctestify.sh",
+		"/Users/jacob/PG_Code/enginestarterapp/.git/modules/Externals/pgengine/rebase-merge/git-rebase-todo",
+		"/Users/jacob/PG_Code/enginestarterapp/starterapp.xcodeproj/project.pbxproj",
+		"/Users/jacob/PG_Code/enginestarterapp/starterapp.xcodeproj/project.pbxproj.orig",
+		"/tmp/subl stdin Ubd33B.txt",
+		"/Users/jacob/dumpTable.sql",
+		"/Users/jacob/.bash_profile",
+		"/Users/jacob/GitHub/enginestarterapp/Externals/pgengine/pgcommon/Externals/zipkit/ZipKit_Prefix.pch",
+		"/Users/jacob/GitHub/enginestarterapp/Tools/AndroidScripts/manual/zipandroidlibs.sh",
+		"/Users/jacob/GitHub/enginestarterapp/Externals/pgengine/pgcommon/Externals/zipkit/ZipKitFW-Info.plist",
+		"/Users/jacob/GitHub/enginestarterapp/ATTRIBUTION",
+		"/Users/jacob/GitHub/enginestarterapp/Classes/Startup/AudioStartupStep.h",
+		"/Users/jacob/GitHub/enginestarterapp/Classes/Startup/AssetPrefetchStartupStep.h",
+		"/Users/jacob/GitHub/enginestarterapp/apportable/overridden_params.template.json",
+		"/Users/jacob/GitHub/enginestarterapp/Externals/pgengine/pgcommon/Externals/OpenUDID/OpenUDID.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Startup/AssetManagerStartupStep.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Views/AssetPreloadManager.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Startup/AudioStartupStep.h",
+		"/Users/jacob/GitHub/rescuerangers/Resources/Audio/ambience_seagulls.mp3",
+		"/Users/jacob/GitHub/rescuerangers/android_config.json",
+		"/Users/jacob/GitHub/rescuerangers/Classes/AdColony/VideoAdsManagerDelegate.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Startup/AssetManagerStartupStep.m",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Achievements/AchievementsManager.m",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Achievements/AchievementsManager.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Managers/AmbienceSoundManager.m",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Managers/AmbienceSoundManager.h",
+		"/Users/jacob/GitHub/rescuerangers/Externals/pgengine/pgcommon/Externals/cocos2d1x/external/Tremor/asm_arm.h",
+		"/Users/jacob/GitHub/rescuerangers/Resources/Audio/RescueRangers_Mysterious.mp3",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Rewards/RiggedRewardManager.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Rewards/RiggedRewardManager.m",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Views/RRLabelRetinaTTF.h",
+		"/Users/jacob/GitHub/rescuerangers/Resources/Parameters/RiggedReward.csv",
+		"/Users/jacob/GitHub/rescuerangers/Rakefile",
+		"/Users/jacob/GitHub/rescuerangers/Resources/Parameters/RewardDistribution.csv",
+		"/Users/jacob/GitHub/rescuerangers/Externals/pgengine/pgcommon/Externals/Twitter+OAuth/ReadMe.txt",
+		"/Users/jacob/GitHub/rescuerangers/RateAppParameters.csv",
+		"/Users/jacob/GitHub/rescuerangers/README.md",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Parameters/SocialChallengeNarrationInfo.m",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Parameters/SocialChallengeNarrationInfo.h",
+		"/Users/jacob/GitHub/rescuerangers/Resources/Parameters/SocialChallengeNarration.csv",
+		"/Users/jacob/GitHub/rescuerangers/Tools/smartCCBRebuild.py",
+		"/Users/jacob/GitHub/rescuerangers/Externals/OldCoreData/SConscript",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Store/StoreObject.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Global/SplitTestOptionConstants.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/Parameters/SocialParameters.h",
+		"/Users/jacob/GitHub/rescuerangers/Classes/SocialChallenge/SocialChallenge.h"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/jacob/PG_Code/enginestarterapp/,*.ccb",
+			"/Users/jacob/PG_Code/enginestarterapp/,*.c*",
+			"/Users/jacob/PG_Code/enginestarterapp/,*.cbb",
+			"/Users/jacob/PG_Code/enginestarterapp/*.cbb",
+			"/Users/jacob/PG_Code/enginestarterapp/**.cbb",
+			"/Users/jacob/PG_Code/enginestarterapp/",
+			"-/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/,/Users/jacob/PG_Code/enginestarterapp/",
+			"/Users/jacob/PG_Code/enginestarterapp/,-/Users/jacob/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/",
+			"~/PG_Code/enginestarterapp/,-~/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/",
+			"~/PG_Code/enginestarterapp/,-~/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/*",
+			"~/PG_Code/enginestarterapp/*,-~/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/*",
+			"~/PG_Code/enginestarterapp/**,-~/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK/*",
+			"~/PG_Code/enginestarterapp,-~/PG_Code/enginestarterapp/Externals/pgengine/pgcommon/Externals/FacebookSDK",
+			"*.m",
+			"",
+			"*.m",
+			"SocialChallenge*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"gun",
+			"gun.",
+			"GunRuntimeData gun",
+			"TryShoot",
+			"shotTimer",
+			"spreadBase",
+			"spreadPerBullet",
+			"()",
+			";",
+			"gun.",
+			"gun",
+			"FireRate",
+			"shotsFired",
+			"BulletSpeed",
+			"NumBullets",
+			"timeFiring",
+			"bulletsFired",
+			"GunData",
+			"float totalAngle = numBullets",
+			"public",
+			"bulletFolder",
+			"folder",
+			"\"Bullets\"",
+			"numBulletsBase",
+			"Base",
+			"formatNumber",
+			"['tag']",
+			".tag",
+			"EngineGame",
+			"date_released",
+			"tag",
+			"game.tag",
+			"write_mako_template",
+			"ahead",
+			"        game.commits_ahead = refs['ahead_by']\n",
+			"merge_game_data",
+			"update_commits",
+			"ACCESS_TOKEN",
+			"mapping",
+			"grp",
+			"pgscript.run",
+			"pgscript",
+			"from",
+			"call_rpc",
+			"test_update",
+			"make_rpc",
+			"RPC",
+			"route_mapping",
+			"UpdateCommits",
+			"commits_ahead",
+			"Updatetags",
+			"load_game_data",
+			"print",
+			"# deprecated",
+			"game.tag",
+			"enginegame.all",
+			"tab",
+			"down",
+			"update_tags",
+			"update_tages",
+			"build_game_row",
+			"EngineGame",
+			"TEMPLATE_PATH",
+			"render_mako_template",
+			"write_mako_template",
+			"COMPANY",
+			"	",
+			"\n	",
+			"replace",
+			"runCmd",
+			"runCmdFormatted",
+			"gitCommand",
+			"$",
+			"rebase",
+			"<<<",
+			"' -i '' Z\nfind . | grep \"\\.h$\\|\\.m$\" | xargs -IZ sed -e '",
+			"1415926535897932",
+			"-maxdepth 1",
+			"3.1415926535897",
+			"rebase",
+			"pick",
+			"App[\\s<>]",
+			"App\\s",
+			"App",
+			"Store",
+			"(R|r)ate",
+			"(R|r)rate",
+			"(R|r)eview",
+			"review",
+			"rate",
+			"forgot password",
+			"rate",
+			"[fbappevent",
+			"header_sear",
+			"rebase",
+			"];\n\n    [[PEDeviceUtility sharedInstance] wipeAllLocalState];\n\n    [self ",
+			",",
+			"hw_name",
+			"\n\n",
+			"\n",
+			">>>>>>>",
+			"$ProjectFolder",
+			"'",
+			"~/Projects",
+			"Unzipper",
+			"zip",
+			"@dynamic identifier",
+			"readwrite.*NSString \\*identifier",
+			"@dynamic identifier",
+			"@dynamic",
+			"dynamic",
+			"readwrite.*NSString \\*identifier",
+			"readonly.*NSString \\*identifier",
+			"read(only|write).*NSString \\*identifier",
+			"readwrite",
+			"read(only|write).*NSString \\*identifier",
+			"readonly.*NSString \\*identifier",
+			"readonly"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			",\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 100.0
+	},
+	"project": "ZephyrShot.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pla",
+				"Assets/Scripts/PlayerFire.cs"
+			],
+			[
+				"pm",
+				"Assets/Scripts/Managers/PowerupManager.cs"
+			],
+			[
+				"spawner",
+				"Assets/Scripts/EnemySpawner.cs"
+			],
+			[
+				"spawnf",
+				"Assets/Scripts/Util/SpawnFolder.cs"
+			],
+			[
+				"timer",
+				"Assets/Scripts/Util/Timer.cs"
+			],
+			[
+				"stat",
+				"Assets/Scripts/UI/StatText.cs"
+			],
+			[
+				"playerf",
+				"Assets/Scripts/PlayerFire.cs"
+			],
+			[
+				"dataco",
+				"Assets/Scripts/DataComponent.cs"
+			],
+			[
+				"sto",
+				"store.js"
+			],
+			[
+				"cron",
+				"pgengine/cron_update.py"
+			],
+			[
+				"zipper",
+				"Externals/pgengine/pgcommon/Classes/Engine/Lib/Unzipper.h"
+			],
+			[
+				"assetmanager.h",
+				"Externals/pgengine/pgcommon/Classes/Engine/Lib/AssetManager.h"
+			],
+			[
+				"asma",
+				"Externals/pgengine/pgcommon/Classes/Engine/Lib/AssetManager.h"
+			],
+			[
+				"scni",
+				"Classes/Parameters/SocialChallengeNarrationInfo.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
