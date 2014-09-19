@@ -1,0 +1,20 @@
+- More interesting enemy motion
+    . sinewave
+    . bezier? arc swooping
+
+- Enemies can shoot
+    . player can take damage
+    . enemy gun types?
+
+- Level structure
+    . random enemies
+    . escalating difficulty
+    . modulating powerup drop frequency to be in line with expectation (pseudorandom, based on stage progress)
+
+- UI
+    . HUD
+    . Level select
+    . upgrade shop
+    . stats screen
+    . weapon equip screen
+    . pause menu
