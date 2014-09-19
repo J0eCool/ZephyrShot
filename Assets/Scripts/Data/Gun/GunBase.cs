@@ -9,10 +9,14 @@ public class GunBase {
     public GunRuntimeData gun;
 
     public static GunBase Build(GunData data, GameObject player) {
+        switch (data.type) {
+        case GunType.Straight:
+            return new StraightGun(data, player);
+        }
         return new GunBase(data, player);
     }
 
-    private GunBase(GunData data, GameObject player) {
+    public GunBase(GunData data, GameObject player) {
         gun = new GunRuntimeData(data);
 
         transform = player.transform;
@@ -27,7 +31,7 @@ public class GunBase {
         return rate;
     }
 
-    public int NumBullets() {
+    virtual public int NumBullets() {
         if (gun.data.type == GunType.SideShooting) {
             return 1;
         }
