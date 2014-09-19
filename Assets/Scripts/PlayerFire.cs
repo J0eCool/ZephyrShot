@@ -6,12 +6,12 @@ public class PlayerFire : MonoBehaviour {
 	private int gunIndex = 0;
 	private int sideIndex = 1;
 
-	private GunRuntimeData[] gunList;
+	private GunBase[] gunList;
 
 	void Start() {
-		gunList = new GunRuntimeData[DataManager.instance.gunTypes.Length];
+		gunList = new GunBase[DataManager.instance.gunTypes.Length];
 		for (int i = 0; i < DataManager.instance.gunTypes.Length; i++) {
-			gunList[i] = new GunRuntimeData(DataManager.instance.gunTypes[i], gameObject);
+			gunList[i] = GunBase.Build(DataManager.instance.gunTypes[i], gameObject);
 		}
 	}
 
@@ -20,15 +20,15 @@ public class PlayerFire : MonoBehaviour {
 			sideIndex = (sideIndex + 1) % gunList.Length;
 			gunIndex = (gunIndex + 1) % gunList.Length;
 
-			GunForIndex(gunIndex).shotTimer.Reset();
-			GunForIndex(sideIndex).shotTimer.Reset();
+			GunForIndex(gunIndex).gun.shotTimer.Reset();
+			GunForIndex(sideIndex).gun.shotTimer.Reset();
 		}
 
 		GunForIndex(gunIndex).TryShoot();
 		GunForIndex(sideIndex).TryShoot();
 	}
 
-	private GunRuntimeData GunForIndex(int i) {
+	private GunBase GunForIndex(int i) {
 		return gunList[i];
 	}
 
