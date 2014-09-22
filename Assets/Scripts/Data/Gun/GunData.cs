@@ -18,4 +18,5 @@ public enum GunType {
     Straight,
     Helixing,
     SideShooting,
+    Cardinal,
 }

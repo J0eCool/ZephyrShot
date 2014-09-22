@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GunBase {
+public abstract class GunBase {
     public float speedPerLevel = 7.0f;
 
     private Transform transform;
@@ -16,8 +16,10 @@ public class GunBase {
             return new HelixGun(data, player);
         case GunType.SideShooting:
             return new SideGun(data, player);
+        case GunType.Cardinal:
+            return new CardinalGun(data, player);
         }
-        return new GunBase(data, player);
+        return null;
     }
 
     public GunBase(GunData data, GameObject player) {
@@ -54,8 +56,8 @@ public class GunBase {
         }
     }
 
-    public void TryShoot() {
-        float fireRate = FireRate();
+    public void TryShoot(float rateMultiplier = 1.0f) {
+        float fireRate = FireRate() * rateMultiplier;
         float timePerShot = 1.0f / fireRate;
         if (gun.shotTimer.HasPassed(timePerShot)) {
             gun.shotTimer.Advance(timePerShot);

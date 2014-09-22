@@ -225,6 +225,15 @@ MonoBehaviour:
     spreadBase: 10
     offset: {x: 1, y: .25, z: 0}
     offsetPerBullet: {x: 0, y: 0, z: 0}
+  - bulletPrefab: {fileID: 100000, guid: ec6fb5f5c957249f08608baba7ca015b, type: 2}
+    type: 3
+    fireRateBase: 3
+    bulletSpeedBase: 6
+    numBulletsBase: 1
+    spreadPerBullet: 3
+    spreadBase: 10
+    offset: {x: 0, y: .25, z: 0}
+    offsetPerBullet: {x: 0, y: 0, z: 0}
 --- !u!1 &1145836501
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +252,7 @@ GameObject:
   - 50: {fileID: 1145836510}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156081fdf61a48946a26ec88d2aa4ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPerLevel: 7
+  sideGunFirePercent: 40
+  startGunIndex: 9
+  useSideGun: 0
 --- !u!61 &1145836509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -651,6 +662,18 @@ Prefab:
     - target: {fileID: 3300000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
+      propertyPath: startGunIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
+      propertyPath: useSideGun
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2beaa061e54f1514886756400aa62bd5, type: 2}
