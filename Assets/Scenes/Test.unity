@@ -102,6 +102,61 @@ Transform:
   - {fileID: 1308176411}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &185367194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 185367197}
+  - 61: {fileID: 185367196}
+  - 114: {fileID: 185367195}
+  m_Layer: 0
+  m_Name: StarSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &185367195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185367194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f64072b82ba4299a9d69cb4ba2577e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starPrefab: {fileID: 100000, guid: 94aeccc4f66e04332b229957b19014d8, type: 2}
+  spawnRate: 7
+  minSpawnSize: .5
+  baseMoveSpeed: 4
+--- !u!61 &185367196
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185367194}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 6, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &185367197
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185367194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.5, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523887449}
+  m_RootOrder: 4
 --- !u!1 &822236242
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +632,7 @@ Transform:
   - {fileID: 1535639167}
   - {fileID: 1365213075}
   - {fileID: 822236244}
+  - {fileID: 185367197}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1 &1535639166
