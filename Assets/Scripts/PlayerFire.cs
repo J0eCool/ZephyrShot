@@ -41,11 +41,21 @@ public class PlayerFire : MonoBehaviour {
 
 	public void CollectPowerup(Powerup powerup) {
 		foreach (var gun in gunList) {
-			gun.CollectPowerup(powerup);
+			if (gun.gun.powerupLevel < MaxPowerupLevel()) {
+				gun.gun.powerupLevel++;
+			}
 		}
 	}
 
 	public string StatsText() {
 		return "FireRate: " + GunForIndex(gunIndex).FireRate();
+	}
+
+	public int MaxPowerupLevel() {
+		return 10;
+	}
+
+	public float GetPowerupFraction() {
+		return (float)GunForIndex(gunIndex).gun.powerupLevel / MaxPowerupLevel();
 	}
 }

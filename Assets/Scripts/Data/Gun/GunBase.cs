@@ -41,21 +41,6 @@ public abstract class GunBase {
         return gun.data.bulletSpeedBase;
     }
 
-    public float MaxLevel() {
-        return 3 + gun.bulletLevel;
-    }
-
-    public void CollectPowerup(Powerup powerup) {
-        if (gun.powerupLevel < 25) {
-            gun.powerupLevel++;
-        }
-
-        if (gun.powerupLevel > MaxLevel() && gun.bulletLevel < 4) {
-            gun.powerupLevel = 0;
-            gun.bulletLevel++;
-        }
-    }
-
     public void TryShoot(float rateMultiplier = 1.0f) {
         float fireRate = FireRate() * rateMultiplier;
         float timePerShot = 1.0f / fireRate;
