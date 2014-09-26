@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class Health : MonoBehaviour {
 	public int maxHealth = 10;
-	public GameObject spawnOnDeath = null;
 	
 	private int health;
 
