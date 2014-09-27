@@ -5,12 +5,17 @@ public class PlayerHealth : MonoBehaviour {
     public int health { get; private set; }
 
     public float invincibleTime = 1.0f;
+    public GameObject explosionPrefab;
 
     private Timer invincibilityTimer;
 
     void Start() {
         health = maxHealth;
         invincibilityTimer = new Timer();
+    }
+
+    void Update() {
+        renderer.enabled = CanBeHit();
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -32,6 +37,7 @@ public class PlayerHealth : MonoBehaviour {
     private void TakeHit() {
         health--;
         invincibilityTimer.Reset();
+        GameObject.Instantiate(explosionPrefab, transform.position, Quaternion.identity);
     }
 
     private bool CanBeHit() {

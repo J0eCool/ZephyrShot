@@ -17,7 +17,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400008}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   invincibleTime: 1
+  explosionPrefab: {fileID: 100000, guid: f50a86c50344f45d88eca5746b00ae84, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -3,14 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerFire : MonoBehaviour {
+	public float sideGunFirePercent = 40.0f;
+	public int startGunIndex = 0;
+	public bool useSideGun = true;
+
 	private int gunIndex = 0;
 	private int sideIndex = 1;
 
 	private GunBase[] gunList;
 
-	public float sideGunFirePercent = 40.0f;
-	public int startGunIndex = 0;
-	public bool useSideGun = true;
+	private PlayerHealth health;
 
 	void Start() {
 		gunList = new GunBase[DataManager.instance.gunTypes.Length];
@@ -18,6 +20,7 @@ public class PlayerFire : MonoBehaviour {
 			gunList[i] = GunBase.Build(DataManager.instance.gunTypes[i], gameObject);
 		}
 		gunIndex = Mathf.Clamp(startGunIndex, 0, gunList.Length - 1);
+		health = GetComponent<PlayerHealth>();
 	}
 
 	void Update() {
