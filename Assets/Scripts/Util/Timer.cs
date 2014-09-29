@@ -19,13 +19,13 @@ public class Timer {
     public void Advance(float dt) {
         AdvanceWithoutReset(dt);
 
-		if (HasPassed(dt)) {
+		if (HasPassed(2.0f * dt)) {
 			Reset();
 		}
     }
 
 	public void AdvanceWithoutReset(float dt) {
-		startTime += dt;
+		startTime -= dt;
 	}
 
     public void Reset() {

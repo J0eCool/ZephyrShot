@@ -24,12 +24,14 @@ public class PlayerFire : MonoBehaviour {
 	}
 
 	void Update() {
+		if (health.IsInactive()) {
+			ResetGunTimers();
+		}
 		if (Input.GetKeyDown(KeyCode.Tab)) {
 			sideIndex = (sideIndex + 1) % gunList.Length;
 			gunIndex = (gunIndex + 1) % gunList.Length;
 
-			GunForIndex(gunIndex).gun.shotTimer.Reset();
-			GunForIndex(sideIndex).gun.shotTimer.Reset();
+			ResetGunTimers();
 		}
 
 		GunForIndex(gunIndex).TryShoot();
@@ -47,6 +49,12 @@ public class PlayerFire : MonoBehaviour {
 			if (gun.gun.powerupLevel < MaxPowerupLevel()) {
 				gun.gun.powerupLevel++;
 			}
+		}
+	}
+
+	private void ResetGunTimers() {
+		foreach (var gun in gunList) {
+			gun.gun.shotTimer.Reset();
 		}
 	}
 
